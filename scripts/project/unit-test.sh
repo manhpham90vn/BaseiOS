@@ -1,10 +1,8 @@
 #!/bin/sh
 
-source $(cd $(dirname ${BASH_SOURCE:-$0}); pwd)/../ruby/ruby-cmd.sh
-
-if ! $BUNDLER_CMD exec fastlane version &> /dev/null
+if ! bundle exec fastlane version &> /dev/null
 then
-    source $(cd $(dirname ${BASH_SOURCE:-$0}); pwd)/../ruby/ruby-install.sh
+    sh $(cd $(dirname ${BASH_SOURCE:-$0}); pwd)/../logs/info.sh bundle install
 fi
 
 bundle exec fastlane unittest --env debug

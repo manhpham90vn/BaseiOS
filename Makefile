@@ -28,8 +28,3 @@ slather:
 .PHONY: testflight
 testflight:
 	@sh scripts/project/upload-testflight.sh
-
-# open xcode
-.PHONY: open
-open:
-	xed .
