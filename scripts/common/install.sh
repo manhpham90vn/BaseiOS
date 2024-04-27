@@ -34,6 +34,7 @@ fi
 if ! brew list ruby@3.1 &> /dev/null
 then
     sh $(cd $(dirname ${BASH_SOURCE:-$0}); pwd)/../brew/brew-install-package.sh ruby@3.1
-    $BREW_CMD link --overwrite --force ruby@3.1
-    echo 'export PATH="/usr/local/opt/ruby@3.1/bin:$PATH"' >> ~/.zshrc
 fi
+
+brew link --force --overwrite ruby@3.1
+export PATH="/usr/local/opt/ruby@3.1/bin:$PATH"
