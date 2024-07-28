@@ -27,15 +27,15 @@ targets:
       VALIDATE_WORKSPACE: YES
       CODE_SIGN_ENTITLEMENTS: Sources/Resources/MyApp.entitlements
     preBuildScripts:
-      - name: Generate
+      - name: "Generate"
         script: scripts/project/swiftgen.sh
     postCompileScripts:
-      - name: Swiftlint
+      - name: "Swiftlint"
         script: scripts/project/linter.sh
-      - name: GoogleServiceInfo
+      - name: "GoogleServiceInfo"
         script: scripts/project/firebase.sh
     postBuildScripts:
-      - name: Crashlytics
+      - name: "Crashlytics"
         script: |
           "${PODS_ROOT}/FirebaseCrashlytics/run"
         inputFiles:
