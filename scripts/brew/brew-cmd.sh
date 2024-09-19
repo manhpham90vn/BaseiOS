@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 if ! [[ $BREW_CMD ]];
 then

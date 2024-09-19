@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 if ! bundle exec fastlane version &> /dev/null
 then

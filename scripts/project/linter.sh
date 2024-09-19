@@ -1,6 +1,4 @@
-#!/bin/sh
-
-source ~/.zshrc
+#!/bin/zsh
 
 sh $(cd $(dirname ${BASH_SOURCE:-$0}); pwd)/../logs/info.sh "warning: Run swiftlint"
 

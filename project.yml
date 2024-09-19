@@ -28,14 +28,18 @@ targets:
       CODE_SIGN_ENTITLEMENTS: Sources/Resources/MyApp.entitlements
     preBuildScripts:
       - name: "Generate"
+        shell: /bin/zsh
         script: scripts/project/swiftgen.sh
     postCompileScripts:
       - name: "Swiftlint"
+        shell: /bin/zsh
         script: scripts/project/linter.sh
       - name: "GoogleServiceInfo"
+        shell: /bin/zsh
         script: scripts/project/firebase.sh
     postBuildScripts:
       - name: "Crashlytics"
+        shell: /bin/zsh
         script: |
           "${PODS_ROOT}/FirebaseCrashlytics/run"
         inputFiles:

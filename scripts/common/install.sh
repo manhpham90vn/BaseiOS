@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 # install cocoapods
 if ! brew list cocoapods &> /dev/null

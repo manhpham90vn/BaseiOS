@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 PATH_TO_GOOGLE_PLISTS="${PROJECT_DIR}/Sources/Configs/GoogleServices"
 echo "warning: Copy file from $PATH_TO_GOOGLE_PLISTS in $CONFIGURATION to ${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist"

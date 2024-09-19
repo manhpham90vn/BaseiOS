@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 # generate swiftgen
 rm -rf Sources/Resources/Generated/*

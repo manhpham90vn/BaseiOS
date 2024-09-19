@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 if ! [[ $SLATHER_CMD ]];
 then

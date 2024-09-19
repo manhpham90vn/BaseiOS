@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 source $(cd $(dirname ${BASH_SOURCE:-$0}); pwd)/slather-cmd.sh
 
